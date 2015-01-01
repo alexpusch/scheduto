@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/netzpirat/haml_coffee_assets.git
+  revision: a3c2951eca005d4fcce4837b9a97a139fc022c66
+  specs:
+    haml_coffee_assets (1.16.0)
+      coffee-script (~> 2.0)
+      sprockets (~> 2.0)
+      tilt (~> 1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,6 +46,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    backbone-rails (1.1.2)
+      rails (>= 3.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
@@ -159,13 +170,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  backbone-rails
   byebug
   coffee-rails (~> 4.1.0)
+  execjs
   fullcalendar-rails
   haml
+  haml_coffee_assets!
   jbuilder (~> 2.0)
   jquery-rails
   marionette-rails
+  momentjs-rails
   rails (= 4.2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

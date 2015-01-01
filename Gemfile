@@ -24,8 +24,13 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'fullcalendar-rails'
+gem 'backbone-rails'
 gem 'marionette-rails'
 gem 'haml'
+gem 'haml_coffee_assets', git: "https://github.com/netzpirat/haml_coffee_assets.git"
+gem 'execjs'
+gem 'momentjs-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
