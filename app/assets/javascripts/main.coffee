@@ -2,4 +2,12 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-@App = new Marionnete.Application()
+@App = new Marionette.Application()
+
+@App.regions = 
+  main: new Marionette.Region
+    el: "#main"
+
+@App.on "start", ->
+  console.log "after init"
+  Backbone.history.start()

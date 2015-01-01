@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require underscore
+//= require backbone
+//= require backbone.marionette
+//= require hamlcoffee
+//= require moment
+
+//= require main
 //= require_tree .
