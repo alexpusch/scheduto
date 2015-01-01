@@ -20,4 +20,5 @@
 //= require moment
 
 //= require main
+//= require_tree ./entities
 //= require_tree .
