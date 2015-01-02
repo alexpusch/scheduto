@@ -10,6 +10,11 @@
     onShow: ->
       calendar = @initCallendar()
       calendarEvents = @model.createDatedEvents()
+      @listenTo @model.get("events"), "add remove", ->
+        calendar.fullCalendar "removeEventSource", calendarEvents
+        calendarEvents = @model.createDatedEvents()
+        calendar.fullCalendar "addEventSource", calendarEvents;
+
       calendar.fullCalendar("addEventSource", calendarEvents);
 
     initCallendar: ->

@@ -1,0 +1,8 @@
+%form
+  .row.collapse
+    .large-9.columns.title
+      %input{type: "text", placeholder: "title"}
+    .large-2.columns.duration
+      %input{type: "number", placeholder: "duration"}
+    .large-1.columns
+      %a.submit.button.postfix +

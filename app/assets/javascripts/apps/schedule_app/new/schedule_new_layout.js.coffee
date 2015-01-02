@@ -5,4 +5,5 @@ App.module "Schedule.New", (New, App) ->
     template: JST["apps/schedule_app/new/templates/schedule_new_layout_template"]
     regions:
       eventsList: ".events-list"
+      newEventForm: ".new-event-form"
       calendar: ".calendar-container"

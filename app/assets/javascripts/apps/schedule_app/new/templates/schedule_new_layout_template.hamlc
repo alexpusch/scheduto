@@ -1,3 +1,5 @@
 .row
-  .events-list.column.large-4
+  .column.large-4
+    .events-list
+    .new-event-form
   .calendar-container.column.large-8
