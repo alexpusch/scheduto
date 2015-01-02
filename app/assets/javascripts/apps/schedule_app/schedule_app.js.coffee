@@ -8,15 +8,15 @@
     events: new App.Entities.Events [
       new App.Entities.Event
         title: "event 1"
-        duration: 1
+        duration: moment.duration(1, "hours")
     ,
       new App.Entities.Event
         title: "event 2"
-        duration: 2
+        duration: moment.duration(2, "hours")
     ,
       new App.Entities.Event
         title: "event 3"
-        duration: 1
+        duration: moment.duration(1, "hours")
     ]
 
   API = 
