@@ -18,6 +18,7 @@
 //= require backbone.marionette
 //= require hamlcoffee
 //= require moment
+//= require fullcalendar
 
 //= require main
 //= require_tree ./entities
