@@ -31,6 +31,7 @@ gem 'haml_coffee_assets', git: "https://github.com/netzpirat/haml_coffee_assets.
 gem 'execjs'
 gem 'momentjs-rails'
 
+gem 'foundation-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -39,6 +40,7 @@ gem 'momentjs-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+  gem 'thin'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

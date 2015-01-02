@@ -1,2 +1,3 @@
-.events-list
-.calendar
+.row
+  .events-list.column.large-4
+  .calendar-container.column.large-8
