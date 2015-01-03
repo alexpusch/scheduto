@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :schedules do
+    resources :events
+  end
+
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   root 'main#index'
   # The priority is based upon order of creation: first created -> highest priority.
