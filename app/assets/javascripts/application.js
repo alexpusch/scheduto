@@ -17,6 +17,7 @@
 //= require underscore
 //= require backbone
 //= require backbone.marionette
+//= require schema
 //= require hamlcoffee
 //= require moment
 //= require fullcalendar
