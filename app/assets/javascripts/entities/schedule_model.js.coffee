@@ -1,5 +1,20 @@
 @App.module "Entities", (Entities, App) ->
   class Entities.Schedule extends Backbone.Model
+    initialize: ->
+      schema = new Backbone.Schema(this)
+
+      schema.define "events",
+        collection: App.Entities.Events
+
+      schema.define "startDate", 
+        setter: (attribute, value) ->
+          if value.isMoment?()
+            return value
+          else
+            return start: moment(value)
+
+      @get("events").scheduleId = @get("id")
+
     createDatedEvents:  ->
       events = @get("events").models
       instantiatedEvents = []

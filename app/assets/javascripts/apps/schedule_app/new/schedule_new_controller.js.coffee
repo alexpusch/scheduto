@@ -29,7 +29,7 @@
     listenToEventNewForm: (newEventFormView) ->
       @listenTo newEventFormView, "submit:click", (serializedEvent) ->
         event = new App.Entities.Event serializedEvent
-        @schedule.get("events").add event
+        @schedule.get("events").create event
 
     showViews: (layout, eventListView, calendarView, newEventFormView) ->
       layout.eventsList.show eventListView

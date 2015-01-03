@@ -3,21 +3,8 @@
     appRoutes:
       "schedule/new": "new"
 
-  schedule = new App.Entities.Schedule
-    startDate: moment("2015-01-01T08:00Z")
-    events: new App.Entities.Events [
-      new App.Entities.Event
-        title: "event 1"
-        duration: moment.duration(1, "hours")
-    ,
-      new App.Entities.Event
-        title: "event 2"
-        duration: moment.duration(2, "hours")
-    ,
-      new App.Entities.Event
-        title: "event 3"
-        duration: moment.duration(1, "hours")
-    ]
+  schedule = new App.Entities.Schedule gon.schedule
+  window.schedule = schedule
 
   API = 
     new: ->
